@@ -1,0 +1,18 @@
+.delete_form{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.delete_tashxis{
+    margin: auto;
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+}
+
+.delete_btn{
+    background-color: red;
+    padding: 10px 20px;
+    width: 40%;
+}

@@ -1,0 +1,36 @@
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.login{
+    width: 100%;
+}
+
+.login_form{
+    /* background-image: url(../home/img/medical.jpg); */
+    background-color: rgba(9, 119, 245, 0.395);
+    background-size: cover;
+    font-size: 43px;
+    width: 50%;
+    height: 50vh;
+    margin: auto;
+    margin-top: 10% ;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+
+.login_input{
+    width: 50%;
+    background-color: white;
+}
+
+.password_input{
+    width: 50%;
+    background-color: white;
+}

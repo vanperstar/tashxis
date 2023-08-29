@@ -1,0 +1,21 @@
+
+
+.loader{
+    width: 100% !important;
+    height: 100vh !important;
+
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    background-color: rgb(235, 228, 228);
+    z-index: 99;
+    backdrop-filter: blur(4px);
+    display: flex !important;
+    visibility: visible;
+    opacity: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
