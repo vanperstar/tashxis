@@ -39,22 +39,22 @@ function Home() {
         );
       }
       if (selectedOption >= 24.7 && selectedOption <= 53.3) {
-        orta +
+        resH3El.append(orta +
           " " +
           selectedOption +
           " " +
           ` балл Остеосинтез 
         Лучевая терапия 
-        Противоопухолевые, антирезорбтивные, гормональные, таргетные и биологические препараты`;
+        Противоопухолевые, антирезорбтивные, гормональные, таргетные и биологические препараты`);
       }
       if (selectedOption >= 53.4) {
-        yuqori +
+        resH3El.append(yuqori +
           " " +
           selectedOption +
           " " +
           ` балл Паллиативный 
         Лучевая терапия 
-        Противоопухолевые, антирезорбтивные, гормональные, таргетные и биологические препараты`;
+        Противоопухолевые, антирезорбтивные, гормональные, таргетные и биологические препараты`);
       }
       console.log(selectedOption);
 
@@ -67,7 +67,7 @@ function Home() {
   useEffect(() => {
     setTimeout(() => {
       setIsLoading(false);
-    }, 2000);
+    }, 1000);
   }, []);
 
   const getTashxis = async () => {
@@ -98,7 +98,7 @@ function Home() {
                 <div className="result_form" key={res.id}>
                   <h4 className="form_title">{res.name}</h4>
                   <select className="select_form" value={selectedOption} onChange={handleSelectChange}>
-                    <option value=""> входить... </option>
+                    <option selected value=""> входить... </option>
                     {res.TashxisValues.map((element) => {
                       return (
                         <option
@@ -120,6 +120,12 @@ function Home() {
         )}
         <br />
         <div id="result_div"></div>
+        <div>
+          <h2>Прогнозируемая выживаемость</h2>
+          <b>0-24,6 балл:  12 мес, </b>
+          <b>24,7-53,3 балл: 6-12 мес, </b>
+          <b>53,4-82 балл: 6мес</b>
+        </div>
       </div>
     </div>
   );
